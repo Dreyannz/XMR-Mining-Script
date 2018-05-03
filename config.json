@@ -1,0 +1,32 @@
+{
+    "algo": "ALGO",
+    "av": 2,
+    "background": true,
+    "colors": false,
+    "cpu-affinity": null,
+    "cpu-priority": null,
+    "donate-level": 0,
+    "log-file": "/tmp/xmrig.log",
+    "max-cpu-usage": CPU_USAGE,
+    "print-time": 60,
+    "retries": 5,
+    "retry-pause": 5,
+    "safe": false,
+    "syslog": false,
+    "threads": null,
+    "pools": [
+        {
+            "url": "POOL_URL_AND_PORT",
+            "user": "WALLET_ADDRESS",
+            "pass": "WALLET_PASS",
+            "keepalive": true,
+            "nicehash": false,
+            "variant": -1
+        }
+    ],
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "worker-id": null
+    }
+}
