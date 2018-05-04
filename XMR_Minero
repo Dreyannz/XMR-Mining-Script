@@ -5,39 +5,39 @@
 
 # Disclaimer Sequence
 clear
-echo -e "                                                        "
-echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
-echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
-echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
-echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
-echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
-echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
-echo -e "\e[94m    #########  ###    ###  ########     ###       "
-echo -e "\e[94m           XMR_Miner_Mod by _Dreyannz_            "
-echo -e "\e[94m         Original Script by Piolo Martin          "
-echo -e "\e[94m                                                  "
-echo -e "\e[91m                   Disclaimer:                    "
-echo -e "\e[91m                                                  "
-echo -e "\e[91m  We Are Not Liable Of Any Loss, Locked Or Banned "
-echo -e "\e[91m    Of Your Accounts On Your Virtual Providers    "
-echo -e "\e[91m              Mine At Your Own Risk               "
-echo -e "\e[94m                                                  "
+echo "                                                  "
+echo "    :::::::::  :::::::::   ::::::::  :::   :::    "
+echo "    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+echo "    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+echo "    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+echo "    +#+    +#+ +#+    +#+        +#+    +#+       "
+echo "    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+echo "    #########  ###    ###  ########     ###       "
+echo "           XMR_Miner_Mod by _Dreyannz_            "
+echo "         Original Script by Piolo Martin          "
+echo "                                                  "
+echo "                   Disclaimer:                    "
+echo "                                                  "
+echo "  We Are Not Liable Of Any Loss, Locked Or Banned "
+echo "    Of Your Accounts On Your Virtual Providers    "
+echo "              Mine At Your Own Risk               "
+echo "                                                  "
 read -n1 -r -p "           Press Any Key To Continue"
-echo -e "\e[0m                                                  "
+echo "                                                  "
 
 #Pre-Setup Sequence
 clear
 clear
 clear
-echo -e "                                                        "
-echo -e "\e[94m         Please Input Your Wallet Address         "
-echo -e "\e[94m   If You Dont Have One, Create At MyMonero.com   "
-echo -e "\e[94m                                                  "
-read -p "" -e WalletAdd 
-echo -e "\e[94m                                                  "
-echo -e "\e[94m            Please Input Name Of Worker           "
-read -p "" -e WorkerName 
-echo -e "\e[90m                                                  "
+echo "                                                        "
+echo "         Please Input Your Wallet Address         "
+echo "   If You Dont Have One, Create At MyMonero.com   "
+echo "                                                  "
+read -p "" WalletAdd 
+echo "                                                  "
+echo "            Please Input Name Of Worker           "
+read -p "" WorkerName 
+echo "                                                  "
 
 # Dependent Variables
 MY_WALLET="$WalletAdd"
@@ -73,32 +73,32 @@ sed -i "s/CPU_USAGE/${CPU_USAGE}/g" ${CONFIG_NAME}
 /usr/local/bin/xmrig -c /etc/config.json
 
 # Start Miner
-sed -i -e '$i \/usr/local/bin/xmrig -c /etc/config.json\n' /etc/rc.local
+sed -i '$i \/usr/local/bin/xmrig -c /etc/config.json\n' /etc/rc.local
 
 # Closing Sequence
 clear
-echo -e "                                                        "
-echo -e "\e[94m                                                  "
-echo -e "\e[94m           To Check If Worker Is Online           "
-echo -e "\e[94m           Open Your Browser And Go To:           "
-echo -e "\e[94m        https://supportxmr.com/#/dashboard        "
-echo -e "\e[94m                                                  "
-echo -e "\e[94m          Process May Take A Few Minutes          "
-echo -e "\e[94m        Before Appearing On Your DashBoard        "
-echo -e "\e[94m                                                  "
+echo "                                                        "
+echo "                                                  "
+echo "           To Check If Worker Is Online           "
+echo "           Open Your Browser And Go To:           "
+echo "        https://supportxmr.com/#/dashboard        "
+echo "                                                  "
+echo "          Process May Take A Few Minutes          "
+echo "        Before Appearing On Your DashBoard        "
+echo "                                                  "
 read -n1 -r -p "          Press Any Key To Close Sequence         "
-echo -e "\e[0m                                                  "
+echo "                                                  "
 
 # StartUp And Identities
 clear
-echo -e "                                                        "
-echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
-echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
-echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
-echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
-echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
-echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
-echo -e "\e[94m    #########  ###    ###  ########     ###       "
-echo -e "\e[94m           XMR_Miner_Mod by _Dreyannz_            "
-echo -e "\e[94m         Original Script by Piolo Martin          "
-echo -e "                                                        "
+echo "                                                        "
+echo "    :::::::::  :::::::::   ::::::::  :::   :::    "
+echo "    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+echo "    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+echo "    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+echo "    +#+    +#+ +#+    +#+        +#+    +#+       "
+echo "    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+echo "    #########  ###    ###  ########     ###       "
+echo "           XMR_Miner_Mod by _Dreyannz_            "
+echo "         Original Script by Piolo Martin          "
+
