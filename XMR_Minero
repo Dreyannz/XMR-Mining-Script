@@ -1,23 +1,61 @@
 #!/bin/sh
-#Author Piolo Martin
-#Version 1.0
+# Author Piolo Martin
+# XMR_Miner_Mod _Dreyannz_
 
-MY_WALLET="47AvjyMkQy6JFXQo7NDJ6QXaCawzc637jdcAG6BJUBofV8mGiPg2uKqhwFeuTm7UBo3dDBEaAd9w2EynVBsE6s615FqmDhK"
-MY_WALLET_PASS="Dreyannz"
+
+# Disclaimer Sequence
+clear
+echo -e "                                                        "
+echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
+echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
+echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+echo -e "\e[94m    #########  ###    ###  ########     ###       "
+echo -e "\e[94m           XMR_Miner_Mod by _Dreyannz_            "
+echo -e "\e[94m         Original Script by Piolo Martin          "
+echo -e "\e[94m                                                  "
+echo -e "\e[91m                   Disclaimer:                    "
+echo -e "\e[91m                                                  "
+echo -e "\e[91m  We Are Not Liable Of Any Loss, Locked Or Banned "
+echo -e "\e[91m    Of Your Accounts On Your Virtual Providers    "
+echo -e "\e[91m              Mine At Your Own Risk               "
+echo -e "\e[94m                                                  "
+read -n1 -r -p "           Press Any Key To Continue"
+echo -e "\e[0m                                                  "
+
+#Pre-Setup Sequence
+clear
+clear
+clear
+echo -e "                                                        "
+echo -e "\e[94m         Please Input Your Wallet Address         "
+echo -e "\e[94m   If You Dont Have One, Create At MyMonero.com   "
+echo -e "\e[94m                                                  "
+read -p "" -e WalletAdd 
+echo -e "\e[94m                                                  "
+echo -e "\e[94m            Please Input Name Of Worker           "
+read -p "" -e WorkerName 
+echo -e "\e[90m                                                  "
+
+# Dependent Variables
+MY_WALLET="$WalletAdd"
+MY_WALLET_PASS="$WorkerName"
+
+# Independent Variables
 CPU_USAGE="75"
-
-# DON'T EDIT BELOW THIS LINE
 ALGO="cryptonight"
 POOL_URL_AND_PORT="pool.supportxmr.com:80"
 IP=$(ip route get 8.8.8.8| grep src| sed 's/.*src \(.*\)$/\1/g')
 CONFIG_NAME="config.json"
 
-#install libraries
+# Install Libraries
 add-apt-repository -y ppa:jonathonf/gcc-7.1
 apt-get update
 apt-get install -y libmicrohttpd-dev
 
-# Install xmrig binary
+# Install XMRIG Binary
 cd /tmp
 wget http://mymonero.s3-ap-southeast-1.amazonaws.com/xmrig.tar.bz2 -O xmrig.tar.bz2
 tar -vxjf xmrig.tar.bz2
@@ -25,7 +63,6 @@ cp -f xmrig /usr/local/bin/xmrig
 chmod +x /usr/local/bin/xmrig
 rm -f xmrig.tar.bz2
 rm xmrig
-
 cd /etc
 wget http://mymonero.s3-ap-southeast-1.amazonaws.com/config.v1.json -O ${CONFIG_NAME}
 sed -i "s/ALGO/${ALGO}/g" ${CONFIG_NAME}
@@ -33,8 +70,35 @@ sed -i "s/POOL_URL_AND_PORT/${POOL_URL_AND_PORT}/g" ${CONFIG_NAME}
 sed -i "s/WALLET_ADDRESS/${MY_WALLET}/g" ${CONFIG_NAME}
 sed -i "s/WALLET_PASS/${MY_WALLET_PASS}-${IP}/g" ${CONFIG_NAME}
 sed -i "s/CPU_USAGE/${CPU_USAGE}/g" ${CONFIG_NAME}
-
 /usr/local/bin/xmrig -c /etc/config.json
 
-# Insert to startup script
+# Start Miner
 sed -i -e '$i \/usr/local/bin/xmrig -c /etc/config.json\n' /etc/rc.local
+
+# Closing Sequence
+clear
+echo -e "                                                        "
+echo -e "\e[94m                                                  "
+echo -e "\e[94m           To Check If Worker Is Online           "
+echo -e "\e[94m           Open Your Browser And Go To:           "
+echo -e "\e[94m        https://supportxmr.com/#/dashboard        "
+echo -e "\e[94m                                                  "
+echo -e "\e[94m          Process May Take A Few Minutes          "
+echo -e "\e[94m        Before Appearing On Your DashBoard        "
+echo -e "\e[94m                                                  "
+read -n1 -r -p "          Press Any Key To Close Sequence         "
+echo -e "\e[0m                                                  "
+
+# StartUp And Identities
+clear
+echo -e "                                                        "
+echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
+echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
+echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+echo -e "\e[94m    #########  ###    ###  ########     ###       "
+echo -e "\e[94m           XMR_Miner_Mod by _Dreyannz_            "
+echo -e "\e[94m         Original Script by Piolo Martin          "
+echo -e "                                                        "
