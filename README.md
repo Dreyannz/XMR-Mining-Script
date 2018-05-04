@@ -1,6 +1,7 @@
 # Requirements
 * Ubuntu 16.04 x64
 * Putty/Bitvise
+* Account on MyMonero.com
 
 
 ## Command
