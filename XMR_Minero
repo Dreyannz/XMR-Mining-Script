@@ -56,6 +56,7 @@ IP=$(ip route get 8.8.8.8| grep src| sed 's/.*src \(.*\)$/\1/g')
 CONFIG_NAME="config.json"
 
 # Install Libraries
+clear
 add-apt-repository -y ppa:jonathonf/gcc-7.1
 apt-get update
 apt-get install -y libmicrohttpd-dev
