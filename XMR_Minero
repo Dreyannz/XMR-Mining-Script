@@ -36,15 +36,20 @@ echo "                                                  "
 read -p "" WalletAdd 
 echo "                                                  "
 echo "            Please Input Name Of Worker           "
+echo "                                                  "
 read -p "" WorkerName 
 echo "                                                  "
+echo "        CPU Usage: [1-100] Recommended=50         "
+echo "                                                  "
+read -p "" CPU 
 
 # Dependent Variables
 MY_WALLET="$WalletAdd"
 MY_WALLET_PASS="$WorkerName"
+CPU_USAGE="$CPU"
 
 # Independent Variables
-CPU_USAGE="75"
+
 ALGO="cryptonight"
 POOL_URL_AND_PORT="192.110.160.114:80"
 IP=$(ip route get 8.8.8.8| grep src| sed 's/.*src \(.*\)$/\1/g')
