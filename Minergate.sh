@@ -51,7 +51,7 @@ CPU_USAGE="$CPU"
 # Independent Variables
 
 ALGO="cryptonight"
-POOL_URL_AND_PORT="192.110.160.114:80"
+POOL_URL_AND_PORT="stratum+tcp://xmr.pool.minergate.com:45700"
 IP=$(ip route get 8.8.8.8| grep src| sed 's/.*src \(.*\)$/\1/g')
 CONFIG_NAME="config.json"
 
