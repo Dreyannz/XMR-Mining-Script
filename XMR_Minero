@@ -70,7 +70,7 @@ chmod +x /usr/local/bin/xmrig
 rm -f xmrig.tar.bz2
 rm xmrig
 cd /etc
-wget https://raw.githubusercontent.com/Dreyannz/XMR_Mining_Ubuntu/master/config.json -O ${CONFIG_NAME}
+wget https://raw.githubusercontent.com/Dreyannz/XMR_Mining_Ubuntu/master/config1.json -O ${CONFIG_NAME}
 sed -i "s/ALGO/${ALGO}/g" ${CONFIG_NAME}
 sed -i "s/POOL_URL_AND_PORT/${POOL_URL_AND_PORT}/g" ${CONFIG_NAME}
 sed -i "s/WALLET_ADDRESS/${MY_WALLET}/g" ${CONFIG_NAME}
