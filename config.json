@@ -13,7 +13,7 @@
     "retry-pause": 5,
     "safe": false,
     "syslog": false,
-    "threads": null,
+    "threads": 5,
     "pools": [
         {
             "url": "POOL_URL_AND_PORT",
