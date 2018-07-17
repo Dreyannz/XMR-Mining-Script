@@ -1,14 +1,12 @@
-# Requirements
-* Ubuntu 16.04 x64
-* Putty/Bitvise
-* Account on MyMonero.com
-
 # Disclaimer
 **I AM NOT RESPONSIBLE FOR ANY LOSS THAT WILL OCCUR WHILE USING THIS XMR MINING SCRIPT**
 
 **MINE AT YOUR OWN RISK.**
 
-
+# Requirements
+* Ubuntu 16.04 x64
+* Putty/Bitvise
+* Account on MyMonero.com
 
 # Recommendations
 
