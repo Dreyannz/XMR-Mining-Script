@@ -35,7 +35,7 @@ For Example, You Are Using a 6 vCPU Machine.
 
 
 
-**All Recommendations Are Based On My Experience On Mining Using This XMR Mining Script**
+**All Recommendations Are Based On My Experience Using This XMR Mining Script**
 
 
 ## Installation
