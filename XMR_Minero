@@ -35,18 +35,24 @@ echo "   If You Dont Have One, Create At MyMonero.com   "
 echo "                                                  "
 read -p "" WalletAdd 
 echo "                                                  "
-echo "            Please Input Name Of Worker           "
+echo "                  Name of Worker                  "
 echo "                                                  "
 read -p "" WorkerName 
 echo "                                                  "
-echo "        CPU Usage: [1-100] Recommended=50         "
+echo "       Maximum vCPU Usage (Recommended: 80)       "
 echo "                                                  "
 read -p "" CPU 
+echo "                                                  "
+echo "      Number of Threads (Recommended: Max-2)      "
+echo "                                                  "
+read -p "" THREADS 
+clear
 
 # Dependent Variables
 MY_WALLET="$WalletAdd"
 MY_WALLET_PASS="$WorkerName"
 CPU_USAGE="$CPU"
+THREADS="$THREADS"
 
 # Independent Variables
 
@@ -76,6 +82,7 @@ sed -i "s/POOL_URL_AND_PORT/${POOL_URL_AND_PORT}/g" ${CONFIG_NAME}
 sed -i "s/WALLET_ADDRESS/${MY_WALLET}/g" ${CONFIG_NAME}
 sed -i "s/WALLET_PASS/${MY_WALLET_PASS}-${IP}/g" ${CONFIG_NAME}
 sed -i "s/CPU_USAGE/${CPU_USAGE}/g" ${CONFIG_NAME}
+sed -i "s/THREADS/${THREADS}/g" ${CONFIG_NAME}
 /usr/local/bin/xmrig -c /etc/config.json
 
 # Start Miner
