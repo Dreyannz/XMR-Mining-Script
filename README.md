@@ -4,7 +4,7 @@
 **MINE AT YOUR OWN RISK.**
 
 # Requirements
-* Ubuntu 16.04 x64
+* Ubuntu 16.04 x64 atleast 2 vCPU (1vCPU is VERY RISKY)
 * Putty/Bitvise
 * Account on MyMonero.com
 
