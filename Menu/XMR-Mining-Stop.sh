@@ -17,6 +17,8 @@ if [ $result -ge 1 ]; then
 	echo -e "\e[93m                Stopping XMR Miner                "
 	echo -e "\e[0m                                                  "
 	killall -15 /usr/local/bin/xmrig -c /etc/config.json >/dev/null 2>&1
+	rm -rf /etc/rc.local
+	cp /etc/rc.local.backup /etc/rc.local
 	sleep 2
 	clear
 	echo -e "                                                        "
@@ -29,7 +31,7 @@ if [ $result -ge 1 ]; then
 	echo -e "\e[94m    #########  ###    ###  ########     ###       "
 	echo -e "\e[94m          XMR Miner Script by _Dreyannz_          "
 	echo -e "\e[94m                                                  "
-	echo -e "\e[93m             XMR Miner Is Not Running             "
+	echo -e "\e[91m             XMR Miner Is Not Running             "
 	echo -e "\e[0m                                                  "
 else
 	clear
@@ -43,6 +45,6 @@ else
 	echo -e "\e[94m    #########  ###    ###  ########     ###       "
 	echo -e "\e[94m          XMR Miner Script by _Dreyannz_          "
 	echo -e "\e[94m                                                  "
-	echo -e "\e[93m             XMR Miner Is Not Running             "
+	echo -e "\e[91m             XMR Miner Is Not Running             "
 	echo -e "\e[0m                                                  "
 fi
