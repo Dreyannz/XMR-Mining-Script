@@ -1,5 +1,5 @@
-[![Script Author][_Dreyannz_]]
-# Islandora Example Module [![Build Status](https://travis-ci.org/Islandora/islandora_example_module.png?branch=7.x)](https://travis-ci.org/Islandora/islandora_example_module)
+
+[![Author](https://github.com/Dreyannz)](https://github.com/Dreyannz)
 
 # Disclaimer
 
