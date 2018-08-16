@@ -2,7 +2,17 @@
 
 **The Script Author Is Not Liable Of Any Loss That Might Occur While Using The Script**
 
-**MINE AT YOUR OWN RISK.**
+# Features
+
+* `Anti-Abuse Parameters` The XMR-Mining-Script will not run on 1vCPU Machines
+
+* `XMR Miner Control Panel` User Freedom over XMR Miner
+    * `menu` Displays the commands
+    * `start` Start XMR Miner
+    * `stop` Stop  XMR Miner
+    * `status` Displays the Status of the XMR Miner
+    * `config` Displays the Config of the XMR Miner
+    * `logs` Displays the Logs of the XMR Miner
 
 # Requirements
 
@@ -16,19 +26,19 @@
 
 **XMR Wallet Address**
 
-```FreeWallet.org``` 
+`FreeWallet.org` 
 
-FreeWallet.org has its own CrytoCurrency Converter, Much Easier to convert from XMR to BTC
+FreeWallet.org has its own CrytoCurrency Converter, Much Easier to convert from XMR to BTC or Any CryptoCurrency
 
 **vCPU Usage: 80**
 
-```80 or Less```
+`80 or Less`
 
 This will decrease the risk from being detected by the VPS Providers
 
 **Threads**
 
-```Maximum vCPU - 2```
+`Maximum vCPU - 2`
 
 If you are using a 6vCPU Machine, you can only allocate a Maximum of 4 Threads
 
