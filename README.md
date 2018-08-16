@@ -1,4 +1,6 @@
 [![Script Author][_Dreyannz_]]
+# Islandora Example Module [![Build Status](https://travis-ci.org/Islandora/islandora_example_module.png?branch=7.x)](https://travis-ci.org/Islandora/islandora_example_module)
+
 # Disclaimer
 
 **The Script Author Is Not Liable Of Any Loss That Might Occur While Using The Script**
