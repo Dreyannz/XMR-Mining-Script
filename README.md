@@ -1,3 +1,4 @@
+[![Script Author][_Dreyannz_]]
 # Disclaimer
 
 **The Script Author Is Not Liable Of Any Loss That Might Occur While Using The Script**
