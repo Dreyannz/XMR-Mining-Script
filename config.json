@@ -2,7 +2,7 @@
     "algo": "ALGO",
     "av": 2,
     "background": true,
-    "colors": false,
+    "colors": true,
     "cpu-affinity": null,
     "cpu-priority": null,
     "donate-level": 0,
