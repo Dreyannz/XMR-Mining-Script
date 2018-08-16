@@ -49,11 +49,11 @@
 
    Example with Computations:
 
-`6vCPU - 2 = 4
+6vCPU - 2 = 4
 
 ( 4/6 ) * 100 = 66.67
 
-66.67 is less than 80`
+66.67 is less than 80
 
    This means that your XMR-Miner is working below the Recommended vCPU Usage
 
