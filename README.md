@@ -2,6 +2,8 @@
 
 **The Script Author Is Not Liable Of Any Loss That Might Occur While Using The Script**
 
+**The Script is OpenSource**
+
 # Features
 
 * `Anti-Abuse Parameters` The XMR-Mining-Script will not run on 1vCPU Machines
