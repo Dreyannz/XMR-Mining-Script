@@ -1,6 +1,4 @@
 
-[![Author](https://github.com/Dreyannz)](https://github.com/Dreyannz)
-
 # Disclaimer
 
 **The Script Author Is Not Liable Of Any Loss That Might Occur While Using The Script**
@@ -62,4 +60,4 @@ This means that your XMR-Miner is working below the Recommended vCPU Usage
 Lesser vCPU Usage, Less Risk of Being Detected
 
 ## Installation
-
+`wget https://raw.githubusercontent.com/Dreyannz/XMR-Mining-Script/master/XMR-Miner.sh && chmod +x XMR-Miner.sh && ./XMR-Miner`
