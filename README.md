@@ -2,7 +2,7 @@
 
 **The Script Author Is Not Liable Of Any Loss That Might Occur While Using The Script**
 
-**The Script is OpenSource**
+**The Script is Open Source**
 
 # Features
 
