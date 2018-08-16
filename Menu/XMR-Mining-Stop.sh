@@ -1,9 +1,8 @@
 #!/bin/bash
 #Script: XMR Mining - Stop
 #Script Author : _Dreyannz_
-command="/usr/local/bin/xmrig -c /etc/config.json"
-running=`ps ax | grep -v grep | grep $command | wc -l`
-if [ $running -gt 0]; then
+result=`ps aux | grep -i "/usr/local/bin/xmrig -c /etc/config.json" | grep -v "grep" | wc -l`
+if [ $result -ge 1 ]; then
 	clear
 	echo -e "                                                        "
 	echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
