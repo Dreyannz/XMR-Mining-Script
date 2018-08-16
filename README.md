@@ -1,47 +1,54 @@
 # Disclaimer
 
-**The Script Author Is Not Liable**
-
-**Of Any Loss That Might**
-
-**Occur While Using The Script**
+**The Script Author Is Not Liable Of Any Loss That Might Occur While Using The Script**
 
 **MINE AT YOUR OWN RISK.**
 
 # Requirements
-* Ubuntu 16.04 x64 atleast 2 vCPU (1vCPU is VERY RISKY)
+
+* Responsible User
+* Ubuntu 16.04 x64 atleast 2 vCPU
 * Putty/Bitvise
-* Account on MyMonero.com
+* XMR Wallet Address
+
 
 # Recommendations
 
-**XMR Wallet**
+**XMR Wallet Address**
 
-MyMonero.com (Highly Secured And Fast Support)
+```FreeWallet.org``` 
+
+FreeWallet.org has its own CrytoCurrency Converter, Much Easier to convert from XMR to BTC
 
 **vCPU Usage: 80**
 
-Keep Equal or Below 80 Percent
+```80 or Less```
 
-**Threads: Max-2**
+This will decrease the risk from being detected by the VPS Providers
 
-This Will Ensure That You Are Running Below 80 Percent vCPU Usage. 
+**Threads**
 
-For Example, You Are Using a 6 vCPU Machine.
+```Maximum vCPU - 2```
 
-(6-2)=4
+If you are using a 6vCPU Machine, you can only allocate a Maximum of 4 Threads
 
-(4/6)*100=67%  
+This will also decrease the risk from being detected and to ensure that you dont overlap your vCPU Usage Limit
 
-67<80 which is good.
+Example with Computations:
 
+6vCPU - 2 = 4
 
+( 4/6 ) * 100 = 66.67
+
+66.67 is less than 80 
+
+This means that your XMR-Miner is working below the Recommended vCPU Usage
+
+Lesser vCPU Usage, Less Risk of Being Detected
 
 
 **All Recommendations Are Based On My Experience Using This XMR Mining Script**
 
 
 ## Installation
-```
-wget https://raw.githubusercontent.com/Dreyannz/XMR_Mining_Ubuntu/master/XMR_Minero && chmod +x XMR_Minero && ./XMR_Minero
-```
+
