@@ -26,7 +26,7 @@
 
 **XMR Wallet Address**
 
-[FreeWallet](https://freewallet.org/)
+`FreeWallet.org`
 
 FreeWallet.org has its own CrytoCurrency Converter, Much Easier to convert from XMR to BTC or Any CryptoCurrency
 
