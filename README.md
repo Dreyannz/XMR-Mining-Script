@@ -60,4 +60,4 @@ This means that your XMR-Miner is working below the Recommended vCPU Usage
 Lesser vCPU Usage, Less Risk of Being Detected
 
 ## Installation
-`wget https://raw.githubusercontent.com/Dreyannz/XMR-Mining-Script/master/XMR-Miner.sh && chmod +x XMR-Miner.sh && ./XMR-Miner`
+```wget https://raw.githubusercontent.com/Dreyannz/XMR-Mining-Script/master/XMR-Miner.sh && chmod +x XMR-Miner.sh && ./XMR-Miner```
