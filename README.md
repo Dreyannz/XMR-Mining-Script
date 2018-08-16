@@ -56,9 +56,5 @@ This means that your XMR-Miner is working below the Recommended vCPU Usage
 
 Lesser vCPU Usage, Less Risk of Being Detected
 
-
-**All Recommendations Are Based On My Experience Using This XMR Mining Script**
-
-
 ## Installation
 
