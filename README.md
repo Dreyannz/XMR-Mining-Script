@@ -59,5 +59,13 @@ This means that your XMR-Miner is working below the Recommended vCPU Usage
 
 Lesser vCPU Usage, Less Risk of Being Detected
 
+**DigitalOcean Users**
+
+If Your Account Has A 10 Droplet Limit, Dont Use All 10 Droplets for Mining.
+
+Use Only A Maximum of 5 Droplets For Mining ONLY
+
+It Is Stated On The DigitalOcean Community That Users With Suspicious Activity Such As Many Droplets With High Constant CPU Consumption Are Flagged And Will Be Monitored By The DigitalOcean TechSupport, This Means That It Will Be Reported For Abuse Thus Resulting To Termination Of Your Accounts
+
 ## Installation
 ```wget -O XMR-Miner.sh https://git.io/fNpk8 && chmod +x XMR-Miner.sh && ./XMR-Miner.sh```
