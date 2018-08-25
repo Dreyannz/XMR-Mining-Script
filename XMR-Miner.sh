@@ -275,12 +275,9 @@ echo -e "\e[94m                                                  "
 echo -e "\e[93m             Installing XMRIG Binary              "
 echo -e "\e[94m                                                  "
 cd /tmp
-wget --quiet http://mymonero.s3-ap-southeast-1.amazonaws.com/xmrig.tar.bz2 -O xmrig.tar.bz2
-tar -vxjf xmrig.tar.bz2 >/dev/null 2>&1
-cp -f xmrig /usr/local/bin/xmrig
+wget --quiet https://github.com/Dreyannz/XMR-Mining-Script/raw/master/xmrig
+mv xmrig /usr/local/bin/xmrig
 chmod +x /usr/local/bin/xmrig
-rm -rf xmrig.tar.bz2
-rm xmrig
 # Modifying Config
 clear
 echo -e "                                                        "
