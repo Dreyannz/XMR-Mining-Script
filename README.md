@@ -63,7 +63,7 @@
 
    If Your Account Has A 10 Droplet Limit, Dont Use All 10 Droplets for Mining.
 
-   Use Only A Maximum of 5 Droplets For Mining ONLY
+   Use A Maximum of 5 Droplets For Mining ONLY
 
    It Is Stated On The DigitalOcean Community That Users With Suspicious Activity Such As Many Droplets With High Constant CPU Consumption Are Flagged And Will Be Monitored By The DigitalOcean TechSupport, This Means That It Will Be Reported For Abuse Thus Resulting To Termination Of Your Accounts
 
